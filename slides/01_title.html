@@ -1,78 +1,191 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>VitaminPScope Presentation</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
-<style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            font-family: 'Inter', sans-serif;
-            background-color: #ffffff;
-        }
-        .slide-container {
-            position: relative;
-            width: 1280px;
-            height: 720px;
-            overflow: hidden;
-            background-color: #ffffff;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1280,height=720" />
+  <title>VitaminPScope: bringing whole-slide AI inference into an interactive pathology workflow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      width: 1280px;
+      height: 720px;
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+
+    .slide {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(59,130,246,.12), transparent 24%),
+        linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    }
+  </style>
 </head>
 <body>
-<div class="slide-container">
-<!-- Background Elements -->
-<div data-object="true" data-object-type="shape" style="position: absolute; left: 0px; top: 0px; width: 1280px; height: 12px; background-color: #2563eb; z-index: 1;"></div>
-<div data-object="true" data-object-type="shape" style="position: absolute; left: 0px; top: 12px; width: 1280px; height: 4px; background-color: #475569; z-index: 1;"></div>
-<div data-object="true" data-object-type="shape" style="position: absolute; left: 1100px; top: 0px; width: 180px; height: 720px; background-color: #f8fafc; z-index: 1; border-left: 1px solid #e2e8f0;"></div>
-<!-- Main Title -->
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 220px; width: 940px; z-index: 10;">
-<p style="margin: 0; font-size: 54px; font-weight: 700; color: #0f172a; line-height: 1.16; letter-spacing: -1px;">VitaminPScope: Scalable Whole-Slide AI Inference and Interactive Pathology Analysis Platform</p>
-</div>
-<!-- Divider Line -->
-<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 380px; width: 120px; height: 6px; background-color: #2563eb; z-index: 1;"></div>
-<!-- Subtitle / Metadata -->
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 420px; width: 800px; z-index: 10;">
-<p style="margin: 0 0 16px 0; font-size: 24px; font-weight: 500; color: #334155; line-height: 1.4;">Computational Pathology Research Group Meeting</p>
-<p style="margin: 0 0 8px 0; font-size: 20px; font-weight: 400; color: #475569; line-height: 1.4;">Presenter: [Name], Affiliation</p>
-<p style="margin: 0; font-size: 20px; font-weight: 400; color: #64748b; line-height: 1.4;">Date: 2026-04-07</p>
-</div>
-<!-- Icons Panel -->
-<div data-object="true" data-object-type="icon" style="position: absolute; left: 1165px; top: 250px; width: 50px; height: 50px; z-index: 10; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 50%;">
-<i class="fa-solid fa-desktop" style="font-size: 24px; color: #2563eb;"></i>
-</div>
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 1106px; top: 310px; width: 168px; height: 22px; z-index: 10; text-align: center; padding: 0 6px; box-sizing: border-box;">
-<p style="margin: 0; font-size: 14px; font-weight: 500; color: #475569; line-height: 1.2;">Frontend</p>
-</div>
-<div data-object="true" data-object-type="icon" style="position: absolute; left: 1165px; top: 370px; width: 50px; height: 50px; z-index: 10; display: flex; justify-content: center; align-items: center; background-color: #f1f5f9; border-radius: 50%;">
-<i class="fa-solid fa-server" style="font-size: 24px; color: #475569;"></i>
-</div>
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 1106px; top: 430px; width: 168px; height: 22px; z-index: 10; text-align: center; padding: 0 6px; box-sizing: border-box;">
-<p style="margin: 0; font-size: 14px; font-weight: 500; color: #475569; line-height: 1.2;">Backend</p>
-</div>
-<div data-object="true" data-object-type="icon" style="position: absolute; left: 1165px; top: 490px; width: 50px; height: 50px; z-index: 10; display: flex; justify-content: center; align-items: center; background-color: #f3e8ff; border-radius: 50%;">
-<i class="fa-solid fa-brain" style="font-size: 24px; color: #7c3aed;"></i>
-</div>
-<div data-object="true" data-object-type="textbox" style="position: absolute; left: 1106px; top: 550px; width: 168px; height: 22px; z-index: 10; text-align: center; padding: 0 6px; box-sizing: border-box;">
-<p style="margin: 0; font-size: 14px; font-weight: 500; color: #475569; line-height: 1.2;">AI Service</p>
-</div>
-<!-- Bottom Graphic Accent -->
-<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 620px; width: 800px; height: 100px; z-index: 1; display: flex; gap: 4px; align-items: flex-end;">
-<div style="width: 20px; height: 20px; background-color: #e2e8f0; border-radius: 2px;"></div>
-<div style="width: 20px; height: 35px; background-color: #cbd5e1; border-radius: 2px;"></div>
-<div style="width: 20px; height: 50px; background-color: #94a3b8; border-radius: 2px;"></div>
-<div style="width: 20px; height: 30px; background-color: #cbd5e1; border-radius: 2px;"></div>
-<div style="width: 20px; height: 65px; background-color: #64748b; border-radius: 2px;"></div>
-<div style="width: 20px; height: 80px; background-color: #475569; border-radius: 2px;"></div>
-<div style="width: 20px; height: 45px; background-color: #94a3b8; border-radius: 2px;"></div>
-<div style="width: 20px; height: 95px; background-color: #3b82f6; border-radius: 2px;"></div>
-<div style="width: 20px; height: 100px; background-color: #2563eb; border-radius: 2px;"></div>
-</div>
-</div>
+  <div class="slide">
+
+    <!-- top bar -->
+    <div
+      data-object="true"
+      data-object-type="shape"
+      style="position:absolute; left:0; top:0; width:1280px; height:10px; background:linear-gradient(90deg, #2563eb, #1d4ed8, #475569);">
+    </div>
+
+    <!-- sidebar -->
+    <div
+      data-object="true"
+      data-object-type="shape"
+      style="position:absolute; top:0; right:0; width:150px; height:720px; background:rgba(248,250,252,.88); border-left:1px solid #e2e8f0;">
+    </div>
+
+    <!-- brand -->
+    <div
+      data-object="true"
+      data-object-type="textbox"
+      style="position:absolute; left:70px; top:42px; width:220px; height:24px;">
+      <p style="margin:0; font-size:16px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#2563eb;">
+        VitaminPScope
+      </p>
+    </div>
+
+    <!-- title -->
+    <div
+      data-object="true"
+      data-object-type="textbox"
+      style="position:absolute; left:70px; top:95px; width:930px; height:110px;">
+      <p style="margin:0; font-size:40px; line-height:1.12; font-weight:800; letter-spacing:-0.02em; color:#0f172a;">
+        VitaminPScope: bringing whole-slide AI inference into an interactive pathology workflow
+      </p>
+    </div>
+
+    <!-- subtitle -->
+    <div
+      data-object="true"
+      data-object-type="textbox"
+      style="position:absolute; left:70px; top:170px; width:900px; height:60px;">
+      <p style="margin:0; font-size:18px; line-height:1.5; color:#475569;">
+        A lightweight platform for loading WSIs, running ROI or whole-slide inference, visualizing results, and exporting analysis-ready outputs.
+      </p>
+    </div>
+
+    <!-- blue rule -->
+    <div
+      data-object="true"
+      data-object-type="shape"
+      style="position:absolute; left:70px; top:230px; width:110px; height:6px; background:#2563eb; border-radius:999px;">
+    </div>
+
+    <!-- left card -->
+    <div
+      data-object="true"
+      data-object-type="shape"
+      style="position:absolute; left:70px; top:270px; width:500px; height:320px; background:rgba(255,255,255,.88); border:1px solid #e2e8f0; border-radius:22px;">
+    </div>
+
+    <!-- left card title -->
+    <div
+      data-object="true"
+      data-object-type="textbox"
+      style="position:absolute; left:96px; top:300px; width:420px; height:30px;">
+      <p style="margin:0; font-size:22px; font-weight:700; color:#0f172a;">
+        What this presentation covers
+      </p>
+    </div>
+
+    <!-- left card bullets -->
+    <div
+      data-object="true"
+      data-object-type="textbox"
+      style="position:absolute; left:96px; top:350px; width:430px; height:150px;">
+      <p style="margin:0; font-size:19px; line-height:1.7; color:#334155;">
+        • Why we built VitaminPScope<br>
+        • How it compares with public and commercial platforms<br>
+        • Core architecture and technology choices<br>
+        • User workflow from slide upload to export
+      </p>
+    </div>
+
+    <!-- badges as separate shapes + text -->
+    <div
+      data-object="true"
+      data-object-type="shape"
+      style="position:absolute; left:96px; top:525px; width:92px; height:34px; background:#eff6ff; border-radius:999px;">
+    </div>
+    <div
+      data-object="true"
+      data-object-type="textbox"
+      style="position:absolute; left:111px; top:533px; width:65px; height:18px;">
+      <p style="margin:0; font-size:15px; font-weight:700; color:#1d4ed8;">WSI + ROI</p>
+    </div>
+
+    <div
+      data-object="true"
+      data-object-type="shape"
+      style="position:absolute; left:198px; top:525px; width:100px; height:34px; background:#eff6ff; border-radius:999px;">
+    </div>
+    <div
+      data-object="true"
+      data-object-type="textbox"
+      style="position:absolute; left:214px; top:533px; width:78px; height:18px;">
+      <p style="margin:0; font-size:15px; font-weight:700; color:#1d4ed8;">AI overlays</p>
+    </div>
+
+    <div
+      data-object="true"
+      data-object-type="shape"
+      style="position:absolute; left:309px; top:525px; width:80px; height:34px; background:#eff6ff; border-radius:999px;">
+    </div>
+    <div
+      data-object="true"
+      data-object-type="textbox"
+      style="position:absolute; left:326px; top:533px; width:54px; height:18px;">
+      <p style="margin:0; font-size:15px; font-weight:700; color:#1d4ed8;">Exports</p>
+    </div>
+
+    <div
+      data-object="true"
+      data-object-type="shape"
+      style="position:absolute; left:400px; top:525px; width:76px; height:34px; background:#eff6ff; border-radius:999px;">
+    </div>
+    <div
+      data-object="true"
+      data-object-type="textbox"
+      style="position:absolute; left:418px; top:533px; width:46px; height:18px;">
+      <p style="margin:0; font-size:15px; font-weight:700; color:#1d4ed8;">Docker</p>
+    </div>
+
+    <!-- right placeholder -->
+    <div
+      data-object="true"
+      data-object-type="shape"
+      style="position:absolute; left:610px; top:270px; width:500px; height:320px; background:linear-gradient(135deg, rgba(37,99,235,.08), rgba(124,58,237,.08)); border:2px dashed #94a3b8; border-radius:24px;">
+    </div>
+
+    <div
+      data-object="true"
+      data-object-type="textbox"
+      style="position:absolute; left:700px; top:390px; width:320px; height:60px;">
+      <p style="margin:0; text-align:center; font-size:24px; line-height:1.35; font-weight:700; color:#475569;">
+        Placeholder hero image<br>
+        UI screenshot / architecture visual
+      </p>
+    </div>
+
+    <!-- slide number -->
+    <div
+      data-object="true"
+      data-object-type="textbox"
+      style="position:absolute; right:44px; bottom:36px; width:50px; height:24px;">
+      <p style="margin:0; font-size:16px; font-weight:600; color:#64748b; text-align:right;">01</p>
+    </div>
+
+  </div>
 </body>
 </html>
