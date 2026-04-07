@@ -1,4 +1,4 @@
-# VitaminPScope Slide HTML Set
+# Slide HTML Set
 
 This repository contains a set of clean, structured HTML slides designed to be converted into editable PowerPoint presentations using the SlideForge workflow.
 
