@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Backend Responsibilities - VitaminPScope</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+        }
+        .slide-container {
+            position: relative;
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Top Brand Accent Lines -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 0px; top: 0px; width: 1280px; height: 12px; background-color: #2563eb; z-index: 1;"></div>
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 0px; top: 12px; width: 1280px; height: 4px; background-color: #475569; z-index: 1;"></div>
+<!-- Slide Title -->
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 70px; width: 1120px; z-index: 10;">
+<p style="margin: 0; font-size: 44px; font-weight: 700; color: #0f172a; line-height: 1.2; letter-spacing: -0.5px;">Backend Responsibilities</p>
+</div>
+<!-- Title Divider -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 135px; width: 64px; height: 5px; background-color: #2563eb; border-radius: 2px; z-index: 1;"></div>
+<!-- Left Side Content (Responsibilities List) -->
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 80px; top: 200px; width: 48px; height: 48px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 8px; z-index: 10;">
+<i class="fa-solid fa-network-wired" style="font-size: 20px; color: #2563eb;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 148px; top: 200px; width: 450px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600; color: #1e293b; line-height: 1.3;">API Orchestration</p>
+<p style="margin: 0; font-size: 16px; font-weight: 400; color: #475569; line-height: 1.5;">Central routing for requests, authentication hooks, and secure communication with AI services.</p>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 80px; top: 290px; width: 48px; height: 48px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 8px; z-index: 10;">
+<i class="fa-solid fa-crop" style="font-size: 20px; color: #2563eb;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 148px; top: 290px; width: 450px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600; color: #1e293b; line-height: 1.3;">ROI Cropping Engine</p>
+<p style="margin: 0; font-size: 16px; font-weight: 400; color: #475569; line-height: 1.5;">Efficient extraction from native WSI pyramids utilizing OpenSlide and BioFormats bindings.</p>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 80px; top: 380px; width: 48px; height: 48px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 8px; z-index: 10;">
+<i class="fa-solid fa-file-export" style="font-size: 20px; color: #2563eb;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 148px; top: 380px; width: 450px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600; color: #1e293b; line-height: 1.3;">Data Export Pipeline</p>
+<p style="margin: 0; font-size: 16px; font-weight: 400; color: #475569; line-height: 1.5;">Formatting and delivery of CSV metrics, GeoJSON overlays, JSON metadata, and ROI image snapshots.</p>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 80px; top: 470px; width: 48px; height: 48px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 8px; z-index: 10;">
+<i class="fa-solid fa-users" style="font-size: 20px; color: #2563eb;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 148px; top: 470px; width: 450px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600; color: #1e293b; line-height: 1.3;">Session Management</p>
+<p style="margin: 0; font-size: 16px; font-weight: 400; color: #475569; line-height: 1.5;">Maintaining user state, tracking analysis history, and providing utilities for side-by-side comparison.</p>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 80px; top: 560px; width: 48px; height: 48px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 8px; z-index: 10;">
+<i class="fa-solid fa-database" style="font-size: 20px; color: #2563eb;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 148px; top: 560px; width: 450px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600; color: #1e293b; line-height: 1.3;">Storage &amp; Provenance</p>
+<p style="margin: 0; font-size: 16px; font-weight: 400; color: #475569; line-height: 1.5;">Structured layout of slides and results, caching mechanisms, and rigorous tracking of model versions/timestamps.</p>
+</div>
+<!-- Right Side Visual / Highlight Area -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 630px; top: 200px; width: 570px; height: 408px; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; z-index: 1;"></div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 891px; top: 240px; width: 48px; height: 48px; display: flex; justify-content: center; align-items: center; background-color: #e2e8f0; border-radius: 50%; z-index: 10;">
+<i class="fa-solid fa-server" style="font-size: 20px; color: #475569;"></i>
+</div>
+<!-- API Connections Visualization -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 755px; top: 310px; width: 120px; height: 2px; background-color: #cbd5e1; z-index: 5;"></div>
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 955px; top: 310px; width: 120px; height: 2px; background-color: #cbd5e1; z-index: 5;"></div>
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 914px; top: 360px; width: 2px; height: 80px; background-color: #cbd5e1; z-index: 5;"></div>
+<!-- Connected Components -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 680px; top: 290px; width: 77px; height: 42px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; z-index: 10;"></div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 680px; top: 300px; width: 77px; z-index: 15; text-align: center;">
+<p style="margin: 0; font-size: 12px; font-weight: 500; color: #475569;">Frontend</p>
+</div>
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 1075px; top: 290px; width: 77px; height: 42px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; z-index: 10;"></div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 1075px; top: 300px; width: 77px; z-index: 15; text-align: center;">
+<p style="margin: 0; font-size: 12px; font-weight: 500; color: #475569;">AI Service</p>
+</div>
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 877px; top: 440px; width: 77px; height: 42px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; z-index: 10;"></div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 877px; top: 450px; width: 77px; z-index: 15; text-align: center;">
+<p style="margin: 0; font-size: 12px; font-weight: 500; color: #475569;">Storage</p>
+</div>
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 877px; top: 290px; width: 79px; height: 44px; background-color: #eff6ff; border: 2px solid #3b82f6; border-radius: 6px; z-index: 10;"></div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 877px; top: 300px; width: 79px; z-index: 15; text-align: center;">
+<p style="margin: 0; font-size: 12px; font-weight: 600; color: #1d4ed8;">FastAPI</p>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 660px; top: 520px; width: 510px; z-index: 10; text-align: center;">
+<p style="margin: 0; font-size: 14px; font-weight: 400; color: #64748b; font-style: italic;">The backend acts as the central hub, mediating all user requests, orchestrating AI jobs, and managing I/O operations.</p>
+</div>
+</div>
+</body>
+</html>

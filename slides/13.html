@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Example Use Case - VitaminPScope</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+        }
+        .slide-container {
+            position: relative;
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Top Brand Accent Lines -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 0px; top: 0px; width: 1280px; height: 12px; background-color: #2563eb; z-index: 1;"></div>
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 0px; top: 12px; width: 1280px; height: 4px; background-color: #475569; z-index: 1;"></div>
+<!-- Slide Title -->
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 70px; width: 1120px; z-index: 10;">
+<p style="margin: 0; font-size: 44px; font-weight: 700; color: #0f172a; line-height: 1.2; letter-spacing: -0.5px;">Example Use Case</p>
+</div>
+<!-- Title Divider -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 135px; width: 64px; height: 5px; background-color: #2563eb; border-radius: 2px; z-index: 1;"></div>
+<!-- Step 1 -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 180px; width: 60px; height: 60px; background-color: #2563eb; border-radius: 50%; z-index: 5;"></div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 195px; width: 60px; z-index: 10; text-align: center;">
+<p style="margin: 0; font-size: 24px; font-weight: 700; color: #ffffff;">1</p>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 160px; top: 186px; width: 48px; height: 48px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 8px; z-index: 10;">
+<i class="fa-solid fa-file-image" style="font-size: 24px; color: #2563eb;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 228px; top: 188px; width: 380px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600; color: #1e293b; line-height: 1.3;">Load WSI</p>
+<p style="margin: 0; font-size: 16px; font-weight: 400; color: #475569; line-height: 1.5;">Import slides in standard formats (SVS, NDPI, OME-TIFF).</p>
+</div>
+<!-- Connector 1-2 -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 108px; top: 240px; width: 4px; height: 40px; background-color: #e2e8f0; z-index: 1;"></div>
+<!-- Step 2 -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 280px; width: 60px; height: 60px; background-color: #3b82f6; border-radius: 50%; z-index: 5;"></div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 295px; width: 60px; z-index: 10; text-align: center;">
+<p style="margin: 0; font-size: 24px; font-weight: 700; color: #ffffff;">2</p>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 160px; top: 286px; width: 48px; height: 48px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 8px; z-index: 10;">
+<i class="fa-solid fa-crop-simple" style="font-size: 24px; color: #3b82f6;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 228px; top: 288px; width: 380px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600; color: #1e293b; line-height: 1.3;">Select ROI</p>
+<p style="margin: 0; font-size: 16px; font-weight: 400; color: #475569; line-height: 1.5;">Use lasso or rectangle tools to define areas in the viewer.</p>
+</div>
+<!-- Connector 2-3 -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 108px; top: 340px; width: 4px; height: 40px; background-color: #e2e8f0; z-index: 1;"></div>
+<!-- Step 3 -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 380px; width: 60px; height: 60px; background-color: #60a5fa; border-radius: 50%; z-index: 5;"></div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 395px; width: 60px; z-index: 10; text-align: center;">
+<p style="margin: 0; font-size: 24px; font-weight: 700; color: #ffffff;">3</p>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 160px; top: 386px; width: 48px; height: 48px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 8px; z-index: 10;">
+<i class="fa-solid fa-brain" style="font-size: 24px; color: #60a5fa;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 228px; top: 388px; width: 380px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600; color: #1e293b; line-height: 1.3;">Run Inference</p>
+<p style="margin: 0; font-size: 16px; font-weight: 400; color: #475569; line-height: 1.5;">Choose model version and parameters, initiate processing.</p>
+</div>
+<!-- Connector 3-4 -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 108px; top: 440px; width: 4px; height: 40px; background-color: #e2e8f0; z-index: 1;"></div>
+<!-- Step 4 -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 480px; width: 60px; height: 60px; background-color: #93c5fd; border-radius: 50%; z-index: 5;"></div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 495px; width: 60px; z-index: 10; text-align: center;">
+<p style="margin: 0; font-size: 24px; font-weight: 700; color: #1e293b;">4</p>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 160px; top: 486px; width: 48px; height: 48px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 8px; z-index: 10;">
+<i class="fa-solid fa-eye" style="font-size: 24px; color: #93c5fd;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 228px; top: 488px; width: 380px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600; color: #1e293b; line-height: 1.3;">Visualize Overlays</p>
+<p style="margin: 0; font-size: 16px; font-weight: 400; color: #475569; line-height: 1.5;">Review segmentation results, adjust styles, compare sessions.</p>
+</div>
+<!-- Connector 4-5 -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 108px; top: 540px; width: 4px; height: 40px; background-color: #e2e8f0; z-index: 1;"></div>
+<!-- Step 5 -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 580px; width: 60px; height: 60px; background-color: #bfdbfe; border-radius: 50%; z-index: 5;"></div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 595px; width: 60px; z-index: 10; text-align: center;">
+<p style="margin: 0; font-size: 24px; font-weight: 700; color: #1e293b;">5</p>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 160px; top: 586px; width: 48px; height: 48px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 8px; z-index: 10;">
+<i class="fa-solid fa-download" style="font-size: 24px; color: #bfdbfe;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 228px; top: 588px; width: 380px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 20px; font-weight: 600; color: #1e293b; line-height: 1.3;">Export Results</p>
+<p style="margin: 0; font-size: 16px; font-weight: 400; color: #475569; line-height: 1.5;">Download GeoJSON, CSV, or PNGs for downstream analysis.</p>
+</div>
+<!-- Right Side Visual / Highlight Area -->
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 630px; top: 180px; width: 570px; height: 460px; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; z-index: 1;"></div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 891px; top: 386px; width: 48px; height: 48px; display: flex; justify-content: center; align-items: center; background-color: #e2e8f0; border-radius: 50%; z-index: 10;">
+<i class="fa-solid fa-cogs" style="font-size: 20px; color: #475569;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 660px; top: 580px; width: 510px; z-index: 10; text-align: center;">
+<p style="margin: 0; font-size: 14px; font-weight: 400; color: #64748b; font-style: italic;">Seamless end-to-end workflow from slide import to actionable data extraction.</p>
+</div>
+</div>
+</body>
+</html>

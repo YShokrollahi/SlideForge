@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>System Architecture - VitaminPScope</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+        }
+        .slide-container {
+            position: relative;
+            width: 1280px;
+            height: 720px;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 0px; top: 0px; width: 1280px; height: 12px; background-color: #2563eb; z-index: 1;"></div>
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 0px; top: 12px; width: 1280px; height: 4px; background-color: #475569; z-index: 1;"></div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 80px; top: 70px; width: 1120px; z-index: 10;">
+<p style="margin: 0; font-size: 44px; font-weight: 700; color: #0f172a; line-height: 1.2; letter-spacing: -0.5px;">System Architecture</p>
+</div>
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 80px; top: 135px; width: 64px; height: 5px; background-color: #2563eb; border-radius: 2px; z-index: 1;"></div>
+<div data-object="true" data-object-type="shape" style="position: absolute; left: 476px; top: 186px; width: 732px; height: 416px; background-color: #f1f5f9; border-radius: 8px; z-index: 1;"></div>
+<div data-object="true" data-object-type="image" style="position: absolute; left: 460px; top: 170px; width: 732px; height: 416px; z-index: 5; border: 1px solid #e2e8f0; border-radius: 8px; background-color: #ffffff; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);">
+<img alt="System Architecture Diagram" src="https://www.genspark.ai/api/files/s/RLfud75r?cache_control=3600" style="width: 100%; height: 100%; object-fit: cover;"/>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 80px; top: 180px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 6px; z-index: 10;">
+<i class="fa-solid fa-desktop" style="font-size: 16px; color: #2563eb;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 132px; top: 180px; width: 290px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 18px; font-weight: 600; color: #1e293b; line-height: 1.3;">Frontend</p>
+<p style="margin: 0; font-size: 15px; font-weight: 400; color: #475569; line-height: 1.4;">React, OpenSeadragon/Viv viewer for interactive WSI exploring.</p>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 80px; top: 270px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 6px; z-index: 10;">
+<i class="fa-solid fa-server" style="font-size: 16px; color: #2563eb;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 132px; top: 270px; width: 290px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 18px; font-weight: 600; color: #1e293b; line-height: 1.3;">Backend</p>
+<p style="margin: 0; font-size: 15px; font-weight: 400; color: #475569; line-height: 1.4;">FastAPI orchestration, database I/O, user session management, and data exports.</p>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 80px; top: 370px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 6px; z-index: 10;">
+<i class="fa-solid fa-brain" style="font-size: 16px; color: #2563eb;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 132px; top: 370px; width: 290px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 18px; font-weight: 600; color: #1e293b; line-height: 1.3;">AI Service</p>
+<p style="margin: 0; font-size: 15px; font-weight: 400; color: #475569; line-height: 1.4;">FastAPI with VitaminP model runtime, optimized for PyTorch + CUDA GPUs.</p>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 80px; top: 470px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 6px; z-index: 10;">
+<i class="fa-solid fa-network-wired" style="font-size: 16px; color: #2563eb;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 132px; top: 470px; width: 290px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 18px; font-weight: 600; color: #1e293b; line-height: 1.3;">Communication</p>
+<p style="margin: 0; font-size: 15px; font-weight: 400; color: #475569; line-height: 1.4;">REST APIs routing JSON and GeoJSON payloads asynchronously between nodes.</p>
+</div>
+<div data-object="true" data-object-type="icon" style="position: absolute; left: 80px; top: 560px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; background-color: #eff6ff; border-radius: 6px; z-index: 10;">
+<i class="fa-brands fa-docker" style="font-size: 16px; color: #2563eb;"></i>
+</div>
+<div data-object="true" data-object-type="textbox" style="position: absolute; left: 132px; top: 552px; width: 290px; z-index: 10;">
+<p style="margin: 0 0 4px 0; font-size: 18px; font-weight: 600; color: #1e293b; line-height: 1.3;">Deployment</p>
+<p style="margin: 0; font-size: 15px; font-weight: 400; color: #475569; line-height: 1.4;">Docker-compose orchestration with optional GPU runtime and shared storage mounts.</p>
+</div>
+</div>
+</body>
+</html>
